@@ -1,7 +1,7 @@
 const data = [{
   id: 1,
   name: 'Burpee Exorcist',
-  description: '5 RFT: 10x Demon Burpees resting 1 min between rounds. Record total time',
+  description: '5 RFT: \n10x Demon Burpees resting 1 min between rounds.\nRecord total time',
   wType: 'power',
   target_1: 'full-body',
   target_2: null,
