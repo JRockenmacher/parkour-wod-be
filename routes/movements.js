@@ -4,13 +4,13 @@ const router = express.Router();
 const queries = require('../db/queries');
 
 router.get("/movements", (request, response, next) => {
-    queries.list().then(movements => {
+    queries.listMove().then(movements => {
         response.json({movements});
     }).catch(next);
 });
 
 router.get("movements/:id", (request, response, next) => {
-    queries.read(request.params.id).then(movement => {
+    queries.readMove(request.params.id).then(movement => {
         movement
             ? response.json({movement})
             : response.status(404).json({message: 'Not found'})
@@ -18,19 +18,19 @@ router.get("movements/:id", (request, response, next) => {
 });
 
 router.post("movements/", (request, response, next) => {
-    queries.create(request.body).then(movement => {
+    queries.createMove(request.body).then(movement => {
         response.status(201).json({movement});
     }).catch(next);
 });
 
 router.delete("movements/:id", (request, response, next) => {
-    queries.delete(request.params.id).then(() => {
+    queries.deleteMove(request.params.id).then(() => {
         response.status(204).json({deleted: true});
     }).catch(next);
 });
 
 router.put("movements/:id", (request, response, next) => {
-    queries.update(request.params.id, request.body).then(movement => {
+    queries.updateMove(request.params.id, request.body).then(movement => {
         response.json({movement});
     }).catch(next);
 });
