@@ -37,7 +37,7 @@
 
 // module.exports = router;
 
-const express = require('express');
+
 const knex = require('../db/knex-config') // TODO: Adjust path as needed!
 
 // RESTful Knex Router Template:
@@ -55,7 +55,6 @@ router.delete('/:id', remove)
 /
 
 function getAll(req, res, next) {
-  const {limit, offset} = getQueryOptions(req.query)
   knex('movements')
     .select('*')
     .then(movements => res.status(200).send({data: movements}))

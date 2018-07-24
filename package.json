@@ -1,17 +1,19 @@
 {
   "name": "parkour-wod-be",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parkour WOD app Database",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JRockenmacher/parkour-wod-be.git"
   },
   "author": "JSR",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JRockenmacher/parkour-wod-be/issues"
   },
