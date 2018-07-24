@@ -2,13 +2,15 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const morgan = require("morgan")
 const cors = require("cors")
-const routes = require("./routes/workouts", "./routes/movements")
+const wodRoutes = require("./routes/workouts")
+const moveRoutes = require("./routes/movements")
 const app = express()
 
 app.use(bodyParser.json())
 app.use(cors())
 app.use(morgan('dev'))
-app.use('/api/v1/', routes)
+app.use('/workouts', wodRoutes)
+app.use('/movements', moveRoutes)
 //what is api v1
 
 app.use((req, res, next) => {
