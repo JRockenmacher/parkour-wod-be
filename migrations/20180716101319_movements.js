@@ -5,14 +5,15 @@ exports.up = function(knex, Promise) {
       table.text('name')
       table.text('description')
       table.text('demo')
-      table.text('target_1')
+      table.text('target_1').defaultsTo(null)
       table.text('target_2').defaultsTo('null')
-      table.text('mType')
+      table.text('mType').defaultsTo(null)
       table.text('skill_level')
       table.bool('$equipment').defaultsTo(false)
       table.bool('weights').defaultsTo(false)
       table.bool('partner').defaultsTo(false)
-      table.bool('approved').defaultsTo(false)
+      table.bool('approved')
+      // .defaultsTo(false)
   })
 };
 

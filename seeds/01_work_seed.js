@@ -6,7 +6,7 @@ const data = [{
   target_1: 'full-body',
   target_2: null,
   mType: 'compound',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -18,7 +18,7 @@ const data = [{
   target_1: 'upper-body',
   target_2: 'core',
   mType: 'hold',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -30,7 +30,7 @@ const data = [{
   target_1: 'upper-body',
   target_2: 'lower-body',
   mType: 'compound',
-  $equipment: true,
+  equipment: true,
   weights: true,
   partner: false,
   approved: true
@@ -42,7 +42,7 @@ const data = [{
   target_1: 'compound',
   target_2: null,
   mType: 'dynamic',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -55,7 +55,7 @@ const data = [{
 //   target_1: '',
 //   target_2: '',
 //   mType: '',
-//   $equipment: false,
+//   equipment: false,
 //   weights: false,
 //   partner: false,
 //   approved: true
