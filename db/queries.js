@@ -1,30 +1,58 @@
 const database = require("./knex-config");
 
 module.exports = {
-    list(){
+    listWODs(){
         return database('workouts')
     },
-    create(workout){
+    createWOD(workout){
         return database('workouts')
         .insert(workout)
         .returning('*')
         .then(record => record[0])
     },
-    read(id){
+    readWOD(id){
         return database('workouts')
         .select()
         .where('id', id)
         .first()
     },
-    update(id, workout){
+    updateWOD(id, workout){
         return database('workouts')
         .update(workout)
         .where('id', id)
         .returning('*')
         .then(record => record[0])
     },
-    delete(id){
+    deleteWOD(id){
         return database('workouts')
+        .delete()
+        .where('id', id)
+    },
+
+    listMove(){
+        return database('movements')
+    },
+    createMove(movement){
+        return database('movements')
+        .insert(movement)
+        .returning('*')
+        .then(record => record[0])
+    },
+    readMove(id){
+        return database('movements')
+        .select()
+        .where('id', id)
+        .first()
+    },
+    updateMove(id, movement){
+        return database('movements')
+        .update(movement)
+        .where('id', id)
+        .returning('*')
+        .then(record => record[0])
+    },
+    deleteMove(id){
+        return database('movements')
         .delete()
         .where('id', id)
     }
