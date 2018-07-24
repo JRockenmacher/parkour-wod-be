@@ -9,11 +9,11 @@ router.get("/", (request, response, next) => {
     }).catch(next);
 });
 
-router.get("workouts/:id", (request, response, next) => {
+router.get("/:id", (request, response, next) => {
     queries.readWOD(request.params.id).then(workout => {
         workout
             ? response.json({workout})
-            : response.status(404).json({message: 'Not found'})
+            : response.status(404).json({message: 'Workouts not found'})
     }).catch(next);
 });
 
@@ -23,13 +23,13 @@ router.post("/", (request, response, next) => {
     }).catch(next);
 });
 
-router.delete("workouts/:id", (request, response, next) => {
+router.delete("/:id", (request, response, next) => {
     queries.deleteWOD(request.params.id).then(() => {
         response.status(204).json({deleted: true});
     }).catch(next);
 });
 
-router.put("workouts/:id", (request, response, next) => {
+router.put("/:id", (request, response, next) => {
     queries.updateWOD(request.params.id, request.body).then(workout => {
         response.json({workout});
     }).catch(next);
