@@ -50,20 +50,91 @@ const data = [{
   weights: false,
   partner: false,
   approved: true
+},
+{
+  id: 5,
+  name: 'Wall Crab-Walk',
+  description: 'Elevate feet on a wall and walk up and laterally, keeping butt off the ground.',
+  demo: 'https://media.giphy.com/media/1xmXc6nrXM6Uwu7cgl/giphy.gif',
+  target_1: 'upper-body',
+  target_2: 'core',
+  mType: 'compound',
+  skill_level: 'intermediate',
+  $equipment: false,
+  weights: false,
+  partner: false,
+  approved: true
+},{
+  id: 6,
+  name: 'Windshield Wipers',
+  description: 'On a bar, pull hips up, inline with the shoulders and let hips fall side to side ',
+  demo: 'https://media.giphy.com/media/cs7hG13SDDteSGNbZc/giphy.gif',
+  target_1: 'core',
+  target_2: 'upper-body',
+  mType: '',
+  skill_level: 'intermediate',
+  $equipment: false,
+  weights: false,
+  partner: false,
+  approved: true
+},
+{
+  id: 7,
+  name: 'Archer Pullup',
+  description: 'Pull up focusing effort to one side at a time. Pull with the working hand while rotating support hand to the top of the bar or rings, simultaneously pushing towards the working arm',
+  demo: 'https://media.giphy.com/media/piJuVaVfStAAeLhPA3/giphy.gif',
+  target_1: 'upper-body',
+  target_2: null,
+  mType: '',
+  skill_level: 'intermediate',
+  $equipment: false,
+  weights: false,
+  partner: false,
+  approved: true
+},
+{
+  id: 8,
+  name: 'Quadrupedal Movement: Gallop',
+  description: 'Keeping hips low and body at a 45 degree angle to direction of travel, punch hands forwards, land hands, and spring hips to meet. Rinse and repeat',
+  demo: 'https://media.giphy.com/media/6qpEo6j7bzYiYN7SdE/giphy.gif',
+  target_1: 'compound',
+  target_2: null,
+  mType: '',
+  skill_level: 'beginner',
+  $equipment: false,
+  weights: false,
+  partner: false,
+  approved: true
+},
+{
+  id: 9,
+  name: 'Depth Jump For Height',
+  description: 'Drop off a modest ledge, try to absorb impact and rebound jumping as high as you can with full extension',
+  demo: 'https://media.giphy.com/media/878nLj3DLfl2qaw7Eg/giphy.gif',
+  target_1: 'lower-body',
+  target_2: null,
+  mType: '',
+  skill_level: 'beginner',
+  $equipment: false,
+  weights: false,
+  partner: false,
+  approved: true
 }
+
+
 // {
-  // id: ,
-  // name: '',
-  // description: '',
-  // demo: '',
-  // target_1: '',
-  // target_2: null,
-  // mType: '',
-  // skill_level: '',
-  // $equipment: false,
-  // weights: false,
-  // partner: false,
-  // approved: true
+//   id: ,
+//   name: '',
+//   description: '',
+//   demo: '',
+//   target_1: '',
+//   target_2: null,
+//   mType: '',
+//   skill_level: '',
+//   $equipment: false,
+//   weights: false,
+//   partner: false,
+//   approved: true
 // }
 ]
 exports.seed = function(knex, Promise) {
