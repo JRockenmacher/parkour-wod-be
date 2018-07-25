@@ -120,22 +120,6 @@ const data = [{
   partner: false,
   approved: true
 }
-
-
-// {
-//   id: ,
-//   name: '',
-//   description: '',
-//   demo: '',
-//   target_1: '',
-//   target_2: null,
-//   mType: '',
-//   skill_level: '',
-//   equipment: false,
-//   weights: false,
-//   partner: false,
-//   approved: true
-// }
 ]
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
@@ -144,6 +128,6 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('movements').insert(data)
     })
-    .then(knex.raw(`ALTER SEQUENCE movements_id_seq RESTART WITH ${data.length + 2}`))
+    .then(knex.raw(`ALTER SEQUENCE movements_id_seq RESTART WITH ${data.length + 1}`))
 }
 // better naming convention for quick finding seeds for different tables
