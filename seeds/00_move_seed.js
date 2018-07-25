@@ -126,5 +126,5 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       return knex('movements').insert(data)
     })
-    .then(knex.raw(`ALTER SEQUENCE movements_id_seq RESTART WITH ${data.length + 1}`))
+    .then(knex.raw(`ALTER SEQUENCE movements_id_seq RESTART WITH ${data.length + 1};`))
 }
