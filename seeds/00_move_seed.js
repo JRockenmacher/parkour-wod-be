@@ -7,7 +7,7 @@ const data = [{
   target_2: null,
   mType: 'compound',
   skill_level: 'intermediate',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -20,7 +20,7 @@ const data = [{
   target_2: 'core',
   mType: 'dynamic',
   skill_level: 'beginner',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -33,7 +33,7 @@ const data = [{
   target_2: 'core',
   mType: 'hold',
   skill_level: 'intermediate',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -46,7 +46,7 @@ const data = [{
   target_2: null,
   mType: 'mobility',
   skill_level: 'beginner',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -60,7 +60,7 @@ const data = [{
   target_2: 'core',
   mType: 'compound',
   skill_level: 'intermediate',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -73,7 +73,7 @@ const data = [{
   target_2: 'upper-body',
   mType: '',
   skill_level: 'intermediate',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -87,7 +87,7 @@ const data = [{
   target_2: null,
   mType: '',
   skill_level: 'intermediate',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -101,7 +101,7 @@ const data = [{
   target_2: null,
   mType: '',
   skill_level: 'beginner',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -115,7 +115,7 @@ const data = [{
   target_2: null,
   mType: '',
   skill_level: 'beginner',
-  $equipment: false,
+  equipment: false,
   weights: false,
   partner: false,
   approved: true
@@ -131,7 +131,7 @@ const data = [{
 //   target_2: null,
 //   mType: '',
 //   skill_level: '',
-//   $equipment: false,
+//   equipment: false,
 //   weights: false,
 //   partner: false,
 //   approved: true
