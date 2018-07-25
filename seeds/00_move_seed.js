@@ -122,12 +122,9 @@ const data = [{
 }
 ]
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
   return knex('movements').del()
     .then(function () {
-      // Inserts seed entries
       return knex('movements').insert(data)
     })
     .then(knex.raw(`ALTER SEQUENCE movements_id_seq RESTART WITH ${data.length + 1}`))
 }
-// better naming convention for quick finding seeds for different tables
